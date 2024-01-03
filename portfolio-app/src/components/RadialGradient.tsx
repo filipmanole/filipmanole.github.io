@@ -4,15 +4,11 @@ import { useEffect, useState } from "react";
 interface RadialGradientProps {
   scale: string;
   opacity: string;
-  position?: string;
-  overflow?: string;
 }
 
 const RadialGradient: React.FC<RadialGradientProps> = ({
   scale,
   opacity,
-  position,
-  overflow,
 }) => {
   const [mouseXpercentage, setMouseXPercentage] = useState<number>(0);
   const [mouseYpercentage, setMouseYPercentage] = useState<number>(0);
@@ -45,7 +41,7 @@ const RadialGradient: React.FC<RadialGradientProps> = ({
     <React.Fragment>
       <div
         // rotate-180 for mirrored effect
-        className={`radial-gradient-styling absolute ${position} left-0 h-full w-full -z-[1]   ${opacity} ${scale} ${overflow}`}
+        className={`radial-gradient-styling fixed inset-0 h-screen -z-[1] ${opacity} ${scale}`}
         style={radialGradientStyle}
       ></div>
     </React.Fragment>
