@@ -16,8 +16,8 @@ const Home: React.FC = () => {
           <Suspense fallback={<div>Loading...</div>}>
             <LazyRadialGradient scale="scale-y-125" opacity="opacity-100" />
             <LazyProfile />
-            <LazyBlogPosts />
             <LazyScheduler />
+            <LazyBlogPosts />
             <LazySocialLinks />
           </Suspense>
         </div>

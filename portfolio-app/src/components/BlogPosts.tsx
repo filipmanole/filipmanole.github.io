@@ -1,4 +1,6 @@
 import { useState, useEffect } from 'react';
+import Button from './Button';
+import { FiBookOpen } from "react-icons/fi";
 
 type TPost = {
   title: string;
@@ -64,7 +66,7 @@ const BlogPosts = () => {
   return (
     <div className="flex flex-col gap-20 items-center">
       <h2 className="text-center text-white">
-        Check out my blog posts
+        Blog posts
       </h2>
 
       <div className="flex max-lg:flex-col gap-10">
@@ -77,11 +79,13 @@ const BlogPosts = () => {
             className="bg-darkgrey max-w-md overflow-hidden rounded-xl shadow-lg block">
             <img className="w-full h-80 object-cover object-center" src={post.coverImage.url} alt={post.title} />
             <div className="px-6 py-8">
-              <div className="text-white font-bold text-2xl mb-2 line-clamp-2">{post.title}</div>
+              <div className="text-white text-2xl mb-2 line-clamp-2">{post.title}</div>
             </div>
           </a>
         ))}
       </div>
+
+      <Button link="http://blog.filipmanole.com" iconSVG={FiBookOpen} label="More posts..."/>
     </div>
 
   );

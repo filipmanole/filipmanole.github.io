@@ -16,15 +16,13 @@ const Profile: React.FC = () => {
       <div className="flex flex-col gap-2 items-center">
         <h1 className="text-white">
           {headerIntroData.title}
-          {/* <span className="wave text-7xl">&#128075;&#127997;</span> */}
         </h1>
 
         <hr className="w-full h-1 my-0 bg-white border-0 rounded"></hr>
         
         <h2 className="text-white">{headerIntroData.subtitle}</h2>
       </div>
-
-      
+      <h3 className="mt-16 text-justify text-white">Hello! <span className="wave text-4xl text-white">&#128075;&#127997;</span></h3>
       <p className="text-justify text-white w-3/5 max-lg:w-4/5" style={{ whiteSpace: 'pre-line' }}>
         {headerIntroData.description}
       </p>

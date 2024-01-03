@@ -1,11 +1,10 @@
-
 import profilepicture from "../img/me.webp";
-import { FiGithub, FiLinkedin, FiMail, FiTwitter } from "react-icons/fi";
+import { FiGithub, FiLinkedin, FiTwitter } from "react-icons/fi";
 
 export const headerIntroData = {
   title: "Filip Manole",
   subtitle: "Software Architect",
-  description: "Boasting over 5 years of experience in developing scalable software, my expertise extends beyond coding. I am driven by the art of architecting systems that endure the test of time.\n\n I would love to learn about your current challenges and deliver impactful results for your business that also establish the framework for future innovations.",
+  description: "I help businesses by crafting scalable software that drives their vision. Throughout my career, I have assisted several clients in translating their ideas into effective cloud solutions.\n\nWhile my primary expertise lies in software engineering, my skills extend beyond coding. I am passionate about architecting systems that stand the test of time.",
   socials: [
     {
       link: "https://www.linkedin.com/in/filipmanole/",
@@ -22,30 +21,6 @@ export const headerIntroData = {
   ],
   profilepicture: profilepicture,
 } as const;
-
-export const sideBarRightMail = {
-  link: "mailto:contact@filipmanole.com",
-  text: "contact@filipmanole.com",
-} as const;
-
-export const sideBarLeftSocials = [
-  {
-    link: "https://www.linkedin.com/in/alpay/",
-    icon: FiLinkedin,
-    altimgname: "linkedin",
-  },
-  {
-    link: "https://github.com/AlpayC",
-    icon: FiGithub,
-    altimgname: "github",
-  },
-  {
-    link: "mailto:myemail@com",
-    icon: FiMail,
-    altimgname: "mail",
-  },
-] as const;
-
 
 export const heightStyles: Record<string, { heights: [string, string] }> = {
   small: {
