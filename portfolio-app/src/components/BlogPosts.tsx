@@ -77,7 +77,7 @@ const BlogPosts = () => {
             href={post.url} 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="bg-darkgrey max-w-md overflow-hidden rounded-xl shadow-lg block">
+            className="w-96 hover:scale-100 hover:-translate-y-2 hover:drop-shadow-xl transition-all duration-200 bg-darkgrey max-w-md overflow-hidden rounded-xl shadow-lg block">
             <img className="w-full h-80 object-cover object-center" src={post.coverImage.url} alt={post.title} />
             <div className="px-6 py-8">
               <div className="text-white text-2xl mb-2 line-clamp-2">{post.title}</div>
