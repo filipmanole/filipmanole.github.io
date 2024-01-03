@@ -67,7 +67,7 @@ const BlogPosts = () => {
   return (
     <div className="flex flex-col gap-20 items-center">
       <h2 className="text-center text-white">
-        Blog posts
+        My blog posts
       </h2>
 
       <div className="flex max-lg:flex-col gap-10">
