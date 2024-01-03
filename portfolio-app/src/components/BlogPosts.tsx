@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import Button from './Button';
 import { FiBookOpen } from "react-icons/fi";
+import Spinner from './Spinner';
 
 type TPost = {
   title: string;
@@ -57,7 +58,7 @@ const BlogPosts = () => {
     fetchData();
   }, []);
 
-  if (loading) return <p>Loading...</p>;
+  if (loading) return <Spinner />;
   if (error || !data) return <></>;
 
   // Access your GraphQL data in the 'data' variable
