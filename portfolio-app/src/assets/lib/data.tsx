@@ -3,8 +3,9 @@ import { FiGithub, FiLinkedin, FiTwitter } from "react-icons/fi";
 
 export const headerIntroData = {
   title: "Filip Manole",
-  subtitle: "Software Architect",
-  description: "I help businesses by crafting scalable software that drives their vision. Throughout my career, I have assisted several clients in translating their ideas into effective cloud solutions.\n\nWhile my primary expertise lies in software engineering, my skills extend beyond coding. I am passionate about architecting systems that stand the test of time.",
+  subtitle: "Serverless Architect",
+  description:
+    "I help businesses unlock the power of serverless technology to build scalable, cost-efficient software solutions. By leveraging cloud-native architectures, I assist clients in translating their ideas into flexible, future-ready systems without the overhead of traditional infrastructure.\n\nMy expertise in serverless design allows me to create software that adapts to your growing needs while keeping costs low and reliability high.",
   socials: [
     {
       link: "https://www.linkedin.com/in/filipmanole/",

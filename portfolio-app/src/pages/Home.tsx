@@ -9,11 +9,10 @@ const LazySocialLinks = lazy(() => import("../components/SocialLinks"));
 const LazyScheduler = lazy(() => import("../components/Scheduler"));
 
 const Home: React.FC = () => {
-
   return (
     <>
       <Layout>
-        <div className="flex flex-col relative p-32 max-lg:p-10 gap-32">
+        <div className="flex flex-col relative p-28 max-lg:p-10 gap-32">
           <Suspense fallback={<Spinner />}>
             <LazyRadialGradient scale="scale-y-125" opacity="opacity-100" />
             <LazyProfile />

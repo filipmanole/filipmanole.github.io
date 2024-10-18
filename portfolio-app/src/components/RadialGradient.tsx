@@ -6,10 +6,7 @@ interface RadialGradientProps {
   opacity: string;
 }
 
-const RadialGradient: React.FC<RadialGradientProps> = ({
-  scale,
-  opacity,
-}) => {
+const RadialGradient: React.FC<RadialGradientProps> = ({ scale, opacity }) => {
   const [mouseXpercentage, setMouseXPercentage] = useState<number>(0);
   const [mouseYpercentage, setMouseYPercentage] = useState<number>(0);
 
@@ -34,7 +31,7 @@ const RadialGradient: React.FC<RadialGradientProps> = ({
   }, []);
 
   const radialGradientStyle: React.CSSProperties = {
-    background: `radial-gradient(at ${mouseXpercentage}% ${mouseYpercentage}%, #EB7C2E, #202F47)`,
+    background: `radial-gradient(at ${mouseXpercentage}% ${mouseYpercentage}%, #57260E, #202F47)`,
   };
 
   return (

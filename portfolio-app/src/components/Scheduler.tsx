@@ -3,17 +3,15 @@ import React from "react";
 import Cal from "@calcom/embed-react";
 
 const Scheduler: React.FC = () => {
-
-	return (
+  return (
     <div className="flex flex-col gap-20">
-      <h2 className="text-center text-white">
-        Book a free consulting call
-      </h2>
+      <h2 className="text-center text-white">Book a free consulting call</h2>
       <p className="w-3/5 max-lg:w-4/5 text-justify text-white mx-auto">
-      I am eager to understand your current challenges and contribute impactful results to your business while also establishing the groundwork for future innovations.
+        Let’s discuss how I can address your current challenges and drive
+        innovation for your business.
       </p>
       <Cal calLink="filipmanole/consulting-call" />
-    </div>    
+    </div>
   );
 };
 
